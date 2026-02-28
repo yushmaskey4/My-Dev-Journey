@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #eef2f3;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    /* Yo line le 3 ota equal columns banauchha */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; /* Cards bich ko space */
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Hover garda mathi sarchha */
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile ko lagi Responsive Grid */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Tablet ma 2 ota */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Mobile ma 1 ta matra */
+    }
+}
