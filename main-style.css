@@ -110,6 +110,75 @@ body {
 .personal-info strong {
     color: #3498db;
 }
+/* Features Section */
+.features {
+    padding: 100px 10%;
+    background: #fff;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.f-card {
+    padding: 40px;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.f-card:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-color: #3498db;
+}
+
+.f-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Stats Bar */
+.stats-bar {
+    background: #2c3e50;
+    color: white;
+    padding: 60px 10%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    color: #3498db;
+}
+
+/* CTA Banner */
+.cta-banner {
+    padding: 80px 10%;
+    background: linear-gradient(rgba(52, 152, 219, 0.9), rgba(52, 152, 219, 0.9)), 
+                url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.cta-banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
 
 /* Services Section */
 .services-section {
